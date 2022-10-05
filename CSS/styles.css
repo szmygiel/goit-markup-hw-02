@@ -1,0 +1,40 @@
+/* <- Wszystkie czcionki i ich odmiany wymagane dla układu (grubość i styl) są podłączone z usługi Google Fonts za pomocą jednego linku. Wymagana waga dla Raleway – 700, a dla Roboto – 400, 500, 700 i 900. */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+}
+
+.logo-part {
+  color: #2196f3;
+}
+
+.social.links {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: black;
+  
+}
+
+.link:hover {
+  color: #2196f3;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
