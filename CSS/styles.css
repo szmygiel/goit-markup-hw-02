@@ -20,21 +20,22 @@ body {
   color: #2196f3;
 }
 
-.social.links {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: black;
-  
+.list {
+list-style: none;
+}
+
+
+.link {
+color: black;
+text-decoration: none;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-align: left;
 }
 
 .link:hover {
   color: #2196f3;
-}
-
-.link {
-  color: black;
-  text-decoration: none;
 }
