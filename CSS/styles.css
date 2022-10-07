@@ -52,20 +52,19 @@ h1 {
   background-color: #2f303a;
 }
 
+/* popracuj nad tym buttonem */
 button {
   background-color: #2196F3;
-  border: none;
   color: white;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-Font family: Roboto
-Font size: 16px;
+  width: 200px;
+  Height: 50px;
+  corner-radius: 4px;
+Font family: Roboto;
+Font-size: 16px;
 Line height: 30px;
 Line height: 160%;
-Align: Center;
-Vertical align: Center;
-Letter spacing: 6%;
 }
 
 .p-titles {
