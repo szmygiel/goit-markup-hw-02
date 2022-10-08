@@ -1,6 +1,12 @@
-/* <- Wszystkie czcionki i ich odmiany wymagane dla układu (grubość i styl) są podłączone z usługi Google Fonts za pomocą jednego linku. Wymagana waga dla Raleway – 700, a dla Roboto – 400, 500, 700 i 900. */
 
 /* dodaj root colors */
+
+:root {
+  --outside-background-color: #e5e5e5;
+  --header-footer-color: #212121;
+  --page-color: white;
+  --interactive-elements-color: #2196f3;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -19,17 +25,17 @@ body {
 }
 
 .logo-part {
-  color: #2196f3;
+  color: var(--interactive-elements-color);
 }
 
 .list {
   list-style: none;
+ 
 }
 
 .link {
   color: black;
   text-decoration: none;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -38,36 +44,40 @@ body {
 }
 
 .link:hover {
-  color: #2196f3;
+  color: var(--interactive-elements-color);
+}
+
+.main-title {
+background-color: var(--header-footer-color);
 }
 
 h1 {
-  font-family: Roboto;
   font-size: 44px;
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.06em;
   text-align: center;
   color: white;
-  background-color: #2f303a;
+
 }
 
 /* popracuj nad tym buttonem */
 button {
-  background-color: #2196F3;
+  background-color: var(--interactive-elements-color);
   color: white;
-  text-align: center;
+  text-align:center;
   text-decoration: none;
+  border-style: none;
   width: 200px;
   Height: 50px;
-Font family: Roboto;
 Font-size: 16px;
-Line height: 30px;
-Line height: 160%;
+Line-height: 160%;
+box-shadow: 0px 4px 4px 0px #000000; 
+padding-top: 30px;
+
 }
 
 .p-titles {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -76,7 +86,6 @@ Line height: 160%;
 }
 
 p {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -86,7 +95,6 @@ p {
 }
 
 h2 {
-  font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
@@ -97,7 +105,7 @@ h2 {
 
 /* have to change the figcaption for portfolio as line-height is different */
 figcaption {
-  font-family: Roboto;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -105,8 +113,14 @@ figcaption {
   color: #757575;
 }
 
+.portfolio figcaption {
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: red;
+}
+
 .team-names {
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -115,7 +129,6 @@ figcaption {
 }
 
 .project-name {
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
   line-height: 36px;
@@ -125,8 +138,7 @@ figcaption {
 }
 
 footer {
-  background-color: #212121;
-  font-family: Roboto;
+  background-color: var(--header-footer-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
