@@ -1,11 +1,13 @@
 
-/* dodaj root colors */
+/* dodaj root colors czcionki */
 
 :root {
   --outside-background-color: #e5e5e5;
   --header-footer-color: #212121;
   --page-color: white;
   --interactive-elements-color: #2196f3;
+  --main-font-color: #212121;
+  --secondary-font-color: #757575;
 }
 
 body {
@@ -34,7 +36,7 @@ body {
 }
 
 .link {
-  color: black;
+  color:var(--main-font-color);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -47,22 +49,18 @@ body {
   color: var(--interactive-elements-color);
 }
 
-.main-title {
+.main-header {
 background-color: var(--header-footer-color);
-}
-
-h1 {
   font-size: 44px;
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.06em;
   text-align: center;
   color: white;
-
 }
 
-/* popracuj nad tym buttonem */
-button {
+/* button still to improve */
+.button-header {
   background-color: var(--interactive-elements-color);
   color: white;
   text-align:center;
@@ -70,10 +68,45 @@ button {
   border-style: none;
   width: 200px;
   Height: 50px;
-Font-size: 16px;
-Line-height: 160%;
-box-shadow: 0px 4px 4px 0px #000000; 
-padding-top: 30px;
+  Font-size: 16px;
+  Line-height: 160%;
+  box-shadow: 0px 4px 4px 0px #000000; 
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.button-header:hover {
+ color: var(--main-font-color);
+ background-color:#F5F4FA;
+}
+
+.buttons-portfolio {
+ background-color: #F5F4FA;
+  color: var(--main-font-color);
+  text-align:center;
+  text-decoration: none;
+  border-style: none;
+  width: 200px;
+  Height: 50px;
+  Font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  Line-height: 160%;
+  box-shadow: 0px 4px 4px 0px #000000; 
+  padding-top: 30px;
+
+}
+
+.buttons-portfolio:hover {
+  color: white;
+  background-color: var(--interactive-elements-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
 
 }
 
@@ -83,41 +116,42 @@ padding-top: 30px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: left;
+  color: var(--main-font-color);
 }
 
-p {
+.paragraphs-main-page {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--secondary-font-color);
 }
 
-h2 {
+.secondary-header {
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: var(--main-font-color);
 }
 
-/* have to change the figcaption for portfolio as line-height is different */
-figcaption {
-
+.figcaption-main-page {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-font-color);
 }
 
-.portfolio figcaption {
-  font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: red;
+.figcaption-portfolio {
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.03em;
+text-align: left;
+color: var(--secondary-font-color);
 }
 
 .team-names {
@@ -125,7 +159,7 @@ figcaption {
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-font-color);
 }
 
 .project-name {
@@ -134,10 +168,10 @@ figcaption {
   line-height: 36px;
   letter-spacing: 0.06em;
   text-align: left;
-  color: #212121;
+  color: var(--main-font-color);
 }
 
-footer {
+.footer {
   background-color: var(--header-footer-color);
   font-size: 14px;
   font-weight: 400;
@@ -156,3 +190,6 @@ footer > .logo {
   text-decoration: none;
 }
 
+.link-footer:hover {
+  color: var(--interactive-elements-color);
+}
