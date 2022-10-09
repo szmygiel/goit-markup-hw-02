@@ -12,11 +12,15 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
+}
+
+.section-team {
+background-color: #F5F4FA;
 }
 
 .logo {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
   line-height: 31px;
@@ -50,7 +54,7 @@ body {
 }
 
 .main-header {
-background-color: var(--header-footer-color);
+  background-color: var(--header-footer-color);
   font-size: 44px;
   font-weight: 900;
   line-height: 60px;
@@ -59,19 +63,14 @@ background-color: var(--header-footer-color);
   color: white;
 }
 
-/* button still to improve */
 .button-header {
   background-color: var(--interactive-elements-color);
   color: white;
   text-align:center;
   text-decoration: none;
   border-style: none;
-  width: 200px;
   Height: 50px;
   Font-size: 16px;
-  Line-height: 160%;
-  box-shadow: 0px 4px 4px 0px #000000; 
-  padding-top: 30px;
   cursor: pointer;
 }
 
@@ -86,15 +85,13 @@ background-color: var(--header-footer-color);
   text-align:center;
   text-decoration: none;
   border-style: none;
-  width: 200px;
   Height: 50px;
   Font-size: 16px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.03em;
-  Line-height: 160%;
-  box-shadow: 0px 4px 4px 0px #000000; 
-  padding-top: 30px;
+  
+ 
 
 }
 
@@ -181,8 +178,9 @@ color: var(--secondary-font-color);
   color: #ffffff;
 }
 
-footer > .logo {
+.footer-logo {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .link-footer {
