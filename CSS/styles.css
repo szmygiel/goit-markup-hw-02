@@ -53,6 +53,11 @@ background-color: #F5F4FA;
   color: var(--interactive-elements-color);
 }
 
+.main-section {
+  background-color: var(--header-footer-color);
+  text-align: center;
+  
+}
 .main-header {
   background-color: var(--header-footer-color);
   font-size: 44px;
