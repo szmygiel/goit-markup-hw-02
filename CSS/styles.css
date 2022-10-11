@@ -49,7 +49,21 @@ background-color: #F5F4FA;
   text-align: left;
 }
 
+.link-contacts {
+  color:var(--secondary-font-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
 .link:hover {
+  color: var(--interactive-elements-color);
+}
+
+.link-contacts:hover {
   color: var(--interactive-elements-color);
 }
 
